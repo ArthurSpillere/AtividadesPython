@@ -18,6 +18,9 @@ def apenas18(litros):
         litros -= 18
         cont += 1
     return cont
+#Muito interessante a ideia de fazer um contador dentro de um While para saber a quantidade de latas necessárias
+#Outro jeito de se fazer é usando divisão inteira (//) e resto da divisão (%)
+#A divisão inteira retorna o total de latas e se houver resto, adicionar uma lata extra.
 
 def apenas36(litros):
     cont = 0
@@ -42,8 +45,12 @@ def misturado(litros):
     return(lista)
 
 metros = float(input("Tamanho em metros da parede a ser pintada: "))
+#Como eu apanhei na engenharia por isso, vou comentar aqui também hahaha
+#Se atente às unidades de medida. O certo é "metros quadrados" ou "m²".
 
 litrosNecessarios = metros / 6 # Regra de 3
+#Aqui faltou multiplicar o valor de litros necessários por 1.1 (10% a mais)
+#Conforme foi pedido na questão.
 
 if __name__ == "__main__":
     while True:
@@ -54,6 +61,7 @@ if __name__ == "__main__":
 0. Sair
 """))
 
+#Mesma coisa com a unidade de medida aqui também.
         if escolha == 1:
             print(f"Para pintar {metros:.2f} metros será necessário {apenas18(litrosNecessarios)} galão(es) de 18 litros")
         elif escolha == 2:
@@ -63,3 +71,6 @@ if __name__ == "__main__":
         elif escolha == 0:
             print("Até mais.")
             break
+
+#No geral muito bom o código. Gostei da clareza e de como você pensou
+#para resolver ela. Show!

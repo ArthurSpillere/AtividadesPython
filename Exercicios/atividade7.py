@@ -32,4 +32,9 @@ for caracter in frase:
         contU += 1
 
 print(f"A frase possui {contEspaco} espaços, {contA} letras A(a), {contE} letras E(e), {contI} letras I(i), {contO} letras O(o), {contU} letras U(u).")
-    
+
+
+#Boa! Um dica que já dei em outro exercício é utilizar o .count() aqui também!
+#Vai poupar os if's. E para não ter problemas em letras maiúscalas e minúsculas,
+#Você pode usar .lower() ou .upper() depois do input.
+#Ótimo trabalho!

@@ -31,6 +31,7 @@ def geradorNumerosImpares():
     random.shuffle(impar)
     if impar in ordemSorteioImpar:
         while impar in ordemSorteioImpar:
+            #Faltou parenteses aqui pra chamar a função()
             geradorNumerosImpares
     else:
         quadradoMagico[1] = impar[0]
@@ -61,6 +62,19 @@ def geradorNumerosPares():
 while (possibilidades > 0):
     geradorNumerosImpares()
     geradorNumerosPares()
+    #Vou ser sincero que me perdi nessa linha sem fim ali embaixo hahahaha
+    #como vimos nas boas práticas ontem e hoje, pode-se dividir cada condição e armazenar ela em uma variável e colocar no if
+    #Ou você pode fazer quebras de linhas em cada condição:
+    
+    # if (quadradoMagico[0] + quadradoMagico[1] + quadradoMagico[2] == 15
+    #     and quadradoMagico[3] + quadradoMagico[4] + quadradoMagico[5] == 15
+    #     and quadradoMagico[6] + quadradoMagico[7] + quadradoMagico[8] == 15
+    #     and quadradoMagico[0] + quadradoMagico[3] + quadradoMagico[6] == 15
+    #     and quadradoMagico[1] + quadradoMagico[4] + quadradoMagico[7] == 15
+    #     and quadradoMagico[2] + quadradoMagico[5] + quadradoMagico[8] == 15
+    #     and quadradoMagico[0] + quadradoMagico[4] + quadradoMagico[8] == 15
+    #     and quadradoMagico[2] + quadradoMagico[4] + quadradoMagico[6] == 15):
+    
     if quadradoMagico[0] + quadradoMagico[1] + quadradoMagico[2] == 15 and quadradoMagico[3] + quadradoMagico[4] + quadradoMagico[5] == 15 and quadradoMagico[6] + quadradoMagico[7] + quadradoMagico[8] == 15 and quadradoMagico[0] + quadradoMagico[3] + quadradoMagico[6] == 15 and quadradoMagico[1] + quadradoMagico[4] + quadradoMagico[7] == 15 and quadradoMagico[2] + quadradoMagico[5] + quadradoMagico[8] == 15 and quadradoMagico[0] + quadradoMagico[4] + quadradoMagico[8] == 15 and quadradoMagico[2] + quadradoMagico[4] + quadradoMagico[6] == 15:
         print("\n###")
         print(quadradoMagico[0], quadradoMagico[1], quadradoMagico[2])
@@ -73,6 +87,13 @@ while (possibilidades > 0):
         print(ordemSorteioPar)
         print(ordemSorteioImpar)
 
+
+#Entendi o código. Bacana o jeito de se pensar. Parte do princípio que você já sabe que 
+#há apenas 8 possibilidades e que o 5 precisa estar no meio para funcionar.
+#Creio que você está sim no caminho, apenas seria necessário armazenar as linhas que deram certo
+#e comparar se esta possibilidade já foi printada antes de subtrair do contador "possibilidades"
+#Gostei das tuas variáveis.. preciso aprender contigo como ter variáveis explícitas e ainda assim ter
+#um código bonito! Muito bom!
 
 #import random
 #

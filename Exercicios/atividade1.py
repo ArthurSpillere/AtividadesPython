@@ -29,3 +29,5 @@ print(f"""
 VALOR SINDICATO: R$ {sindicato:.2f}
 SALARIO LÍQUIDO: R$ {bruto - inss - sindicato - importoRenda:.2f}
 """)
+
+#Limpo e claro! Ótimo código.
